@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context="com.sifasystems.activity.CoordinatorConfirmActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Identify Coordinator \n and Confirm Paper "
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="@dimen/_8sdp" />
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_scan_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect"
+            style="@style/AppTheme.ButtonStyle"
+            android:text="Scan Card" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.ButtonStyle"
+            android:background="@android:color/holo_red_light"
+            android:text="Home" />
+    </RelativeLayout>
+</LinearLayout>

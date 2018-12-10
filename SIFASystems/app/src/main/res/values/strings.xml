@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SIFA Systems</string>
+
+    <string name="paper_prompt">Choose a paper</string>
+    <string-array name="paper_arrays">
+        <item>Choose a paper</item>
+        <item>Paper 1</item>
+        <item>Paper 2</item>
+        <item>Paper 3</item>
+        <item>Paper 4</item>
+        <item>Paper 5</item>
+        <item>Paper 6</item>
+        <item>Paper 7</item>
+        <item>Paper 8</item>
+        <item>Paper 9</item>
+        <item>Paper 10</item>
+    </string-array>
+
+    <string name="malpractice_prompt">Choose a malpractice</string>
+    <string-array name="malpractice_arrays">
+        <item>Choose a malpractice</item>
+        <item>Malpractice 1</item>
+        <item>Malpractice 2</item>
+        <item>Malpractice 3</item>
+        <item>Malpractice 4</item>
+        <item>Malpractice 5</item>
+        <item>Malpractice 6</item>
+        <item>Malpractice 7</item>
+        <item>Malpractice 8</item>
+        <item>Malpractice 9</item>
+        <item>Malpractice 10</item>
+    </string-array>
+</resources>

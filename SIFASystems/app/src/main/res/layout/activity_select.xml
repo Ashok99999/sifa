@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context="com.sifasystems.activity.SelectActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="Select Profile"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+    <co.ceryle.radiorealbutton.RadioRealButtonGroup
+        android:id="@+id/group"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:rrbg_animateDrawables_enter="overshoot"
+        app:rrbg_animateTexts_enter="overshoot"
+        app:rrbg_dividerColor="@color/backgroundColor"
+        app:rrbg_dividerSize="1dp"
+        app:rrbg_radius="10dp"
+        app:rrbg_selectorColor="@color/colorPrimaryDark"
+        app:rrbg_selectorSize="6dp">
+
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:id="@+id/radio_coordinator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawable="@drawable/radio_uncheck"
+            app:rrb_drawableHeight="30dp"
+            app:rrb_drawablePadding="10dp"
+            app:rrb_drawableWidth="30dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/colorPrimary"
+            app:rrb_text="Coordinator"
+            app:rrb_textColor="@color/colorPrimary"/>
+
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:id="@+id/radio_invigilator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawable="@drawable/radio_uncheck"
+            app:rrb_drawableGravity="right"
+            app:rrb_drawableHeight="30dp"
+            app:rrb_drawablePadding="10dp"
+            app:rrb_drawableWidth="30dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/colorPrimary"
+            app:rrb_text="Invigilator"
+            app:rrb_textColor="@color/colorPrimary"/>
+    </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect"
+            style="@style/AppTheme.ButtonStyle"
+            android:text="Next" />
+    </RelativeLayout>
+</LinearLayout>

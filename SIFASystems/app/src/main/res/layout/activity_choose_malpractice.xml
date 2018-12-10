@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context="com.sifasystems.activity.ChooseMalpracticeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Malpractice"
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="@dimen/_8sdp" />
+
+    <Spinner
+        android:id="@+id/spinner_malpractice"
+        android:layout_marginTop="10dp"
+        android:entries="@array/malpractice_arrays"
+        android:prompt="@string/malpractice_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect"
+            style="@style/AppTheme.ButtonStyle"
+            android:text="Confirm" />
+    </RelativeLayout>
+</LinearLayout>
